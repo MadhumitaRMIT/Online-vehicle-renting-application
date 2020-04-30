@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="root" alignment="CENTER" prefHeight="184.0" prefWidth="820.0"  xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView  GridPane.columnIndex="0" GridPane.rowIndex="0"  fx:id="image" fitHeight="180.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true">
+   </ImageView>
+   <VBox  GridPane.columnIndex="1" GridPane.rowIndex="0"   HBox.hgrow="ALWAYS">
+      <GridPane hgap="20" vgap="20">
+         <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+         </padding>
+         <Label prefHeight="17.0" prefWidth="100.0" text="Vehicle Type" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+         <TextField fx:id="vehicle_type" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+         <Label text="Make" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+         <TextField fx:id="make" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <Label text="Model" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+         <TextField fx:id="model" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+         <Label text="Seats" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <GridPane.margin>
+               <Insets left="10.0" />
+            </GridPane.margin></Label>
+         <TextField fx:id="seats" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+         <Label text="Year" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets left="10.0" />
+            </GridPane.margin></Label>
+         <TextField fx:id="year" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         <Label prefHeight="15.0" prefWidth="135.0" text="Last Maintenance Date" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets left="10.0" />
+            </GridPane.margin>
+            <font>
+               <Font size="10.0" />
+            </font></Label>
+         <TextField fx:id="lmd" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </VBox>
+   <Button  GridPane.columnIndex="2" GridPane.rowIndex="0"  fx:id="book" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" text="Book Now">
+      <HBox.margin>
+         <Insets />
+      </HBox.margin></Button>
+   <padding>
+      <Insets left="0" right="20" />
+   </padding>
+</GridPane>

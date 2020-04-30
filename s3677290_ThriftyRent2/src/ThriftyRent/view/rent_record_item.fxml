@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="root" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="10" left="10" right="10" top="10" />
+   </padding>
+   <Label text="Rental Record ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+   <TextField fx:id="rentalRecordId" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+   <Label text="Rent Date" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+   <TextField fx:id="rentDate" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <Label text="Estimated Return Date" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+   <TextField fx:id="estimatedReturnDate" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+   <Label text="Actual Return Date" GridPane.columnIndex="2" GridPane.rowIndex="0">
+      <GridPane.margin>
+         <Insets left="10.0" />
+      </GridPane.margin></Label>
+   <TextField fx:id="actualReturnDate" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+   <Label text="Rent Fee" GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="10.0" />
+      </GridPane.margin></Label>
+   <TextField fx:id="rentFee" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+   <Label text="Rental Late Fee" GridPane.columnIndex="2" GridPane.rowIndex="2">
+      <GridPane.margin>
+         <Insets left="10.0" />
+      </GridPane.margin></Label>
+   <TextField fx:id="rentalLateFee" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
